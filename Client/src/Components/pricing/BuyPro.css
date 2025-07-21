@@ -1,0 +1,29 @@
+.buypro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 80vh;
+
+}
+
+.buypro-heading {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: Georgia;
+}
+
+.buypro-subtext {
+  font-size: 18px;
+  color: #ffbc02;
+}
+
+.buypro-image {
+  max-width: 400px;
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+}

@@ -1,0 +1,39 @@
+/* KeywordInput.css */
+
+.keyword-input-form {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.keyword-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.keyword-input:focus {
+    border-color: #ffa41c; /* Amazon-like orange */
+    box-shadow: 0 0 5px rgba(255, 164, 28, 0.5);
+}
+
+.keyword-input-button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: #ffa41c; /* Amazon-like orange */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.keyword-input-button:hover {
+    background-color: #ff8c00; /* Darker shade on hover */
+}
+.keyword-input-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}

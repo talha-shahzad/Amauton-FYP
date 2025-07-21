@@ -1,0 +1,92 @@
+
+.amazon-container {
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.amazon-header {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+.section-title {
+    color: #fe9b05;
+    margin: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.amazon-table {
+    border: 1px solid #232f3e;
+    border-radius: 10px; 
+
+}
+
+.amazon-thead {
+    background-color: #232f3e;
+    color: white;
+}
+
+.amazon-table tbody tr:hover {
+    background: linear-gradient(90deg, #fe9b05, #FFb84d); /* Gradient of Amazon Orange on hover */
+    color: white; /* White text on hover */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Cell text alignment */
+.amazon-table th, .amazon-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* Product images styling */
+.product-image {
+    max-width: 200px;
+    height: auto;
+    width:100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Styling the loading state */
+.loading {
+    color: #146eb4; /* Amazon Blue */
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Error message */
+.error {
+    color: rgba(149, 23, 23, 0.848);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Extra styling for section headers */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fe9a0589; /* Orange underline */
+    margin: 8px auto;
+}
+
+/* Link styling */
+.product-link {
+    color: #007185; /* Amazon's blue link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-link:hover {
+    color: #fe9b05; /* Amazon Orange on hover */
+    text-decoration: underline;
+}

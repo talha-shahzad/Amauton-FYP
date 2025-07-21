@@ -1,0 +1,15 @@
+START
+    Load image datasets from sources
+    Preprocess images (resize, normalize)
+    Extract features using deep learning model (e.g., ResNet, EfficientNet)
+    Calculate cosine similarity between image feature vectors
+    IF similarity below threshold THEN
+        Use SSIM for comparison
+    END IF
+    IF similarity score above threshold THEN
+        Mark images as matching
+    ELSE
+        Mark images as non-matching
+    END IF
+    RETURN matched and non-matched products with similarity scores
+END

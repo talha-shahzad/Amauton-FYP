@@ -1,0 +1,30 @@
+.nav{
+    margin:0;
+    border-top: 1rem solid  #fe9a0540;
+}
+.navbar{
+    width:100%;
+    Padding:0.5rem 2rem;
+}
+.nav-link{
+    color:#130d0a;
+}
+.nav-link:hover{
+    color: #fe9b05;
+}
+.custom-navbar {
+    display: flex !important; 
+    justify-content: flex-end;
+    align-items: center; 
+  }
+.navbar-nav{
+    display:flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.img-logo{
+    max-width: 150px;
+    max-height: 150px;
+    width:100%;
+    margin:0 auto;
+}
