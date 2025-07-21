@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# Amauton  
+*Streamlining Amazon Seller Operations Through Advanced Automation and AI* :contentReference[oaicite:0]{index=0}  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1920" height="1080" alt="Amauton" src="https://github.com/user-attachments/assets/b479f2cd-2d48-4033-92ee-e8808fd74c63" />
 
-Currently, two official plugins are available:
+## 🚀 Project Overview  
+Amauton is a modular, micro‑services platform designed to automate key workflows for Amazon sellers (UK focus). By combining AI‑driven analytics, web scraping, and deep‑learning–based image comparison, it enables end‑to‑end seller support—from product discovery through dynamic pricing and sales analytics—with minimal manual effort.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="1920" height="1080" alt="Amauton (2)" src="https://github.com/user-attachments/assets/9eaac212-660f-4701-88d4-76ebe56a0071" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📖 Key Modules  
+1. **Product Discovery & Extraction**  
+2. **Supplier Sourcing**  
+3. **Profitability Analysis & Listings**  
+4. **Dynamic Pricing & Competitor Analysis**  
+5. **Sales Analytics**
 
-- Configure the top-level `parserOptions` property like this:
+## 🏗 Architecture  
+- **Micro‑services** communicating via an API Gateway  
+- **MongoDB** as the primary data store for JSON‑based product, supplier, pricing, and sales records  
+- **Front‑end** (SPA or mobile‑optimized web UI) ↔ **API Gateway** ↔ **Backend Services**  
+- **Integration** with Amazon SP‑API, retailer scraping pipelines, and image‑matching services  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 💻 Technology Stack  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<img width="1920" height="1080" alt="Amauton (1)" src="https://github.com/user-attachments/assets/a03764f7-8def-4b32-a518-2ab46e74cf44" />
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Backend Languages & Frameworks:** Python (Flask/FastAPI) or Node.js (Express)  
+- **Data Storage:** MongoDB  
+- **Web Scraping:** Scrapy / BeautifulSoup / Selenium / custom Node.js scripts  
+- **LLM & AI:** TensorFlow or PyTorch for image embedding (ResNet/EfficientNet/CLIP); custom trend‑scoring logic  
+- **APIs:** Amazon SP‑API, retailer site endpoints  
+- **Containerization & CI/CD:** Docker, GitHub Actions (optional)  
+
+## 🔧 Installation & Setup  
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/your-org/amauton.git
+
+2. **Install dependencies**
+   *Main*
+   ```bash
+   npm install
+   ```
+   *Server*
+   ```bash
+   cd Server
+   npm install
+   ```
+   *Flask*
+   ```bash
+   cd Flask-app
+   pip install -r requirements.txt
+   ```
+3. **Start the App**
+   *CLient*
+   ```bash
+   cd Cient
+   npm run dev
+   ```
+   *Server*
+   ```bash
+   cd Server
+   node Server.js
+   ```
+   *Flask*
+   ```bash
+   cd Flask-app
+   python main.py
+   ```
